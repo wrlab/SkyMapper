@@ -1,0 +1,23 @@
+site_name: SkyMapper
+site_description: Commercial UAV-Smart Phone Integration for Low-Cost 3D Reconstruction
+site_author: Nojin Park, Ji Hyun Seo, Byounghyun Yoo
+
+theme:
+  name: material
+  features:
+    - navigation.tabs        # 상단 탭 활성화 (Home / Docs 분리)
+    - navigation.indexes     # 폴더 클릭 허용
+  palette:
+    scheme: slate            # 세련된 다크 모드 적용
+
+# 마크다운 확장 기능 (버튼 디자인 등을 위해 필요)
+markdown_extensions:
+  - attr_list
+  - md_in_html
+
+nav:
+  - Home: index.md
+  - Documentation:
+    - Getting Start: guide/index.md
+    - Hardware Setup: guide/hardware.md
+    - Software Setup: guide/software.md

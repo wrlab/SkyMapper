@@ -1,0 +1,24 @@
+name: ci
+on:
+  push:
+    branches:
+      - main # main 브랜치에 코드가 push될 때마다 작동
+permissions:
+  contents: write
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: 3.x
+      - run: echo "cache_id=$(date --utc '+%V')" >> $GITHUB_ENV
+      - uses: actions/cache@v4
+        with:
+          key: mkdocs-material-${{ env.cache_id }}
+          path: .cache
+          restore-keys: |
+            mkdocs-material-
+      - run: pip install mkdocs-material # 사용하는 플러그인이 있다면 여기에 추가 (예: pip install mkdocs-material mkdocs-roamlinks)
+      - run: mkdocs gh-deploy --force
