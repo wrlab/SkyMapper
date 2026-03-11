@@ -1,25 +1,22 @@
 ---
 hide:
-  - navigation
   - toc
 ---
 
 <style>
   .hero-container {
     position: relative;
-    width: 100vw;
-    height: 100vh;
-    left: 50%;
-    right: 50%;
-    margin-left: -50vw;
-    margin-right: -50vw;
-    margin-top: -30px;
+    width: 100%;          /* 100vw 전체화면 강제를 풀고 본문 너비에 맞춤 */
+    height: 60vh;         /* 높이를 살짝 줄여서 메뉴나 다른 내용이 한눈에 보이게 함 */
+    border-radius: 20px;  /* 모서리를 둥글게 깎아서 매우 세련된 쇼케이스 배너 느낌을 줌 */
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     overflow: hidden;
     background-color: #000;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.4); /* 깊이감 있는 그림자 추가 */
+    margin-bottom: 40px;  /* 비디오 아래쪽 여백 */
   }
 
   .bg-video {
@@ -66,7 +63,6 @@ hide:
     text-shadow: 1px 1px 4px rgba(0,0,0,0.8);
   }
 
-  /* 하드웨어 섹션을 나란히 배치하기 위한 스타일 */
   .hardware-grid {
     display: flex;
     gap: 30px;
