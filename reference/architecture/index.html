@@ -13,10 +13,10 @@
       
       
       
-        <link rel="prev" href="../../contribute/license/">
+        <link rel="prev" href="../../troubleshooting/software/">
       
       
-        <link rel="next" href="../hardware/">
+        <link rel="next" href="../network-ports/">
       
       
         
@@ -27,7 +27,7 @@
     
     
       
-        <title>Getting Started (Legacy) - SkyMapper Docs</title>
+        <title>System Architecture - SkyMapper Docs</title>
       
     
     
@@ -78,7 +78,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#getting-started-legacy" class="md-skip">
+        <a href="#system-architecture" class="md-skip">
           Skip to content
         </a>
       
@@ -113,7 +113,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Getting Started (Legacy)
+              System Architecture
             
           </span>
         </div>
@@ -1273,8 +1273,10 @@
       
   
   
+    
   
   
+  
     
     
       
@@ -1290,11 +1292,11 @@
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" checked>
         
           
           <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
@@ -1315,7 +1317,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_8">
             <span class="md-nav__icon md-icon"></span>
             
@@ -1330,10 +1332,37 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../reference/architecture/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    System Architecture
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -1349,6 +1378,48 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#components" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Components
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#data-flows-high-level" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Data flows (high level)
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1361,7 +1432,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../reference/network-ports/" class="md-nav__link">
+      <a href="../network-ports/" class="md-nav__link">
         
   
   
@@ -1389,7 +1460,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../reference/file-formats/" class="md-nav__link">
+      <a href="../file-formats/" class="md-nav__link">
         
   
   
@@ -1417,7 +1488,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../reference/glossary/" class="md-nav__link">
+      <a href="../glossary/" class="md-nav__link">
         
   
   
@@ -1608,10 +1679,8 @@
       
   
   
-    
   
   
-  
     
     
       
@@ -1625,11 +1694,11 @@
     
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_10" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_10" >
         
           
           <label class="md-nav__link" for="__nav_10" id="__nav_10_label" tabindex="0">
@@ -1650,7 +1719,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_10_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_10_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_10">
             <span class="md-nav__icon md-icon"></span>
             
@@ -1665,19 +1734,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../guide/index_2/" class="md-nav__link">
         
   
   
@@ -1693,7 +1753,6 @@
   
 
       </a>
-      
     </li>
   
 
@@ -1706,7 +1765,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../hardware/" class="md-nav__link">
+      <a href="../../guide/hardware/" class="md-nav__link">
         
   
   
@@ -1734,7 +1793,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../software/" class="md-nav__link">
+      <a href="../../guide/software/" class="md-nav__link">
         
   
   
@@ -1782,6 +1841,36 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#components" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Components
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#data-flows-high-level" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Data flows (high level)
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -1797,7 +1886,7 @@
 
 
   
-    <a href="https://github.com/<YOUR_ORG>/<YOUR_REPO>/edit/main/docs/guide/index_2.md" title="Edit this page" class="md-content__button md-icon" rel="edit">
+    <a href="https://github.com/<YOUR_ORG>/<YOUR_REPO>/edit/main/docs/reference/architecture.md" title="Edit this page" class="md-content__button md-icon" rel="edit">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"/></svg>
     </a>
@@ -1805,12 +1894,24 @@
   
 
 
-<h1 id="getting-started-legacy">Getting Started (Legacy)<a class="headerlink" href="#getting-started-legacy" title="Permanent link">&para;</a></h1>
-<p>This page has moved.</p>
-<p>➡️ Go to the new <strong>Getting Started</strong> section:
-- <a href="../getting-started/">Getting Started Overview →</a>
-- <a href="../getting-started/requirements/">Requirements →</a>
-- <a href="../getting-started/quickstart/">Quickstart →</a></p>
+<h1 id="system-architecture">System Architecture<a class="headerlink" href="#system-architecture" title="Permanent link">&para;</a></h1>
+<p>This page is a reference for how components connect.</p>
+<p><img alt="Architecture" src="../../assets/system_architecture.png" style="max-width: 100%; border-radius: 12px; box-shadow: 0 6px 18px rgba(0,0,0,0.35); display: block; margin: 22px auto;" /></p>
+<hr />
+<h2 id="components">Components<a class="headerlink" href="#components" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Phone (tracking + RGB-D)</li>
+<li>Compute node (mapping/planning)</li>
+<li>Controller (mission control)</li>
+<li>Web viewer (monitoring/replay)</li>
+</ul>
+<hr />
+<h2 id="data-flows-high-level">Data flows (high level)<a class="headerlink" href="#data-flows-high-level" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Phone → compute node: pose + RGB-D stream</li>
+<li>Compute node → controller: goals/waypoints</li>
+<li>Compute node → web server: map/telemetry</li>
+</ul>
 
 
 
